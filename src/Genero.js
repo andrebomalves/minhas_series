@@ -9,7 +9,7 @@ function Genero() {
   const [genero, setGenero] = useState([]);
 
   useEffect(() => {
-    Axios.get('api//genres').then(res => {
+    Axios.get('/api/genres').then(res => {
       setGenero(res.data.data)
     })
     return () => {

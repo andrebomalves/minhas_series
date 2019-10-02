@@ -22,6 +22,7 @@ function Menu() {
     return (
         <div>
         <Navbar color="light" light expand="md">
+        <div className='container'>
           <NavbarBrand tag={Link} to='/'>Minhas Series</NavbarBrand>
           <NavbarToggler onClick={toggleNavbar} />
           <Collapse isOpen={toggle} navbar>
@@ -34,6 +35,7 @@ function Menu() {
               </NavItem>
             </Nav>
           </Collapse>
+          </div>
         </Navbar>
       </div>
     )

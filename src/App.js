@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 import Menu from './Menu'
@@ -16,11 +16,13 @@ function App() {
       <Router>
         <Menu></Menu>
         <div className='container'>
-          <Route exact path='/' component={Home}></Route>
-          <Route exact path='/genero' component={Genero}></Route>
-          <Route exact path='/genero/novo' component={NovoGenero}></Route>
-          <Route path='/genero/:id' component={EditarGenero}></Route>
-          <Route exact path='/sobre' component={Sobre}></Route>
+          <Switch>
+            <Route exact path='/' component={Home}></Route>
+            <Route exact path='/genero' component={Genero}></Route>
+            <Route exact path='/genero/novo' component={NovoGenero}></Route>
+            <Route exact path='/genero/:id' component={EditarGenero}></Route>
+            <Route exact path='/sobre' component={Sobre}></Route>
+          </Switch>
         </div>
       </Router>
     </div>
