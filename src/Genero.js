@@ -47,7 +47,7 @@ function Genero() {
   }
 
   return (
-    <div>
+    <div className='container'>
       <h1>Gênero</h1>
       <p><Button color='success' tag={Link} to='/genero/novo' size='sm'>Novo</Button></p>
       <Table hover>

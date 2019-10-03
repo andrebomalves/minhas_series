@@ -2,7 +2,7 @@ import React from 'react'
 
 function Sobre() {
     return (
-        <div><h1>Sobre</h1></div>
+        <div className='container'><h1>Sobre</h1></div>
     )
 }
 

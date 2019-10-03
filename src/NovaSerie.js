@@ -3,7 +3,7 @@ import {Redirect} from 'react-router-dom';
 import {Button} from 'reactstrap'
 import Axios from 'axios'
 
-function NovoGenero() {
+function NovaSerie() {
 
     const [name, setName] = useState('');
     const [confirma, setconfirma] = useState(false);
@@ -14,7 +14,7 @@ function NovoGenero() {
 
     const save = () => {
 
-        Axios.post('/api/genres',{name:name}) 
+        Axios.post('/api/series',{name:name}) 
         .then( res =>{
             console.log(res)
             setconfirma(true)
@@ -23,14 +23,14 @@ function NovoGenero() {
  
     if(confirma){
         return(
-            <Redirect to='/genero'></Redirect>
+            <Redirect to='/series'></Redirect>
         )
     }
 
     return (
         <div className='container'>
-            <h1>Novo Gênero</h1>
-            <form id='frmGenero'>
+            <h1>Nova Série</h1>
+            <form id='frmSerie'>
                 <div className="form-group">
                     <label htmlFor="name">Nome</label>
                     <input type="text" value={name} onChange={onChange} className="form-control" id="name" />
@@ -41,4 +41,4 @@ function NovoGenero() {
     )
 }
 
-export default NovoGenero
+export default NovaSerie

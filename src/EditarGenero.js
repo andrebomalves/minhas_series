@@ -36,7 +36,7 @@ function EditarGenero(props) {
     }
 
     return (
-        <div>
+        <div className='container'>
             <h1>Editar Gênero</h1>
             <form id='frmGenero'>
                 <div className="form-group">
