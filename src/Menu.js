@@ -28,7 +28,7 @@ function Menu() {
           <Collapse isOpen={toggle} navbar>
             <Nav className="ml-auto" navbar>
             <NavItem>
-                <NavLink tag={Link} to='/series'>Series</NavLink>
+                <NavLink tag={Link} to='/series'>Séries</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink tag={Link} to='/genero'>Gênero</NavLink>

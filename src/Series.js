@@ -47,7 +47,7 @@ function Series() {
   return (
     <div className='container'>
       <h1>Séries</h1>
-      <p><Button color='success' tag={Link} to='/series/novo' size='sm'>Novo</Button></p>
+      <p><Button color='success' tag={Link} to='/series/nova' size='sm'>Novo</Button></p>
       <Table hover>
         <thead>
           <tr>
