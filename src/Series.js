@@ -61,8 +61,6 @@ function Series() {
         </tbody>
       </Table>
     </div>
-
-
   );
 }
 
