@@ -10,6 +10,11 @@ function InfoSerie(props) {
     const [data, setData] = useState({});
     const [mode, setMode] = useState('EDIT');
     const [genres, setGenres] = useState([]);
+    const progresso = { 
+        WATCHED : 'Assistido',
+        WATCHING: 'Assistindo',
+        TO_WATCH: 'Para Assistir'
+    }
 
     useEffect(() => {
         Axios
