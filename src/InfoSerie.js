@@ -99,7 +99,7 @@ function InfoSerie(props) {
                             <input type="text" value={form.comments} onChange={onChange('comments')} className="form-control" id="comments" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor='genre'></label>
+                            <label htmlFor='genre'>Gênero</label>
                             <select name="" id="genre" className="form-control" value={form.genre_id} onChange={onChange('genre_id')}>
                                 { genres.map((item) => {
                                     return(<option key={item.id} value={item.id} >{item.name}</option>)
