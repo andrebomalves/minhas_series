@@ -20,7 +20,7 @@ function Series() {
         <th>{row.id}</th>
         <td>{row.name}</td>
         <td>
-          <Button color="info" size='sm' tag={Link} to={'/series/'+row.id}>Editar</Button> {' '}
+          <Button color="info" size='sm' tag={Link} to={'/series/'+row.id}>Info</Button> {' '}
           <Button color='danger' size='sm' onClick={() => onRemove(row.id)} >Remove</Button>
         </td>
       </tr>
