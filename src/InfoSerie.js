@@ -83,7 +83,7 @@ function InfoSerie(props) {
                                     { data.status === 'PARA_ASSISTIR' && <Badge className='mr-1' color='primary'>Para Assistir</Badge>}
                                     <br /> Genero: {data.genre}
                                     <br />
-                                    <p style={{fontStyle:italic,fontWeight:100}}>"{data.comments}"</p>
+                                    <p style={{fontStyle:italic,fontWeight:100}}>{data.comments && `"${data.comments}"`}</p>
                                     <Button color='primary' size='sm' onClick={() => mode === 'INFO' ? setMode('EDIT') : setMode('INFO')} > {mode === 'INFO' ? 'Editar' : 'Cancelar Edição'} </Button>
                                 </div>
                             </div>
