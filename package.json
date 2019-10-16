@@ -15,7 +15,7 @@
     "yarn": "^1.19.0"
   },
   "scripts": {
-    "start": "npm-run-all build api",
+    "start": "PORT=1337 npm-run-all build api",
     "start-react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
